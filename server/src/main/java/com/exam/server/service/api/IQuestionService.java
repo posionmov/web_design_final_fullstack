@@ -9,7 +9,7 @@ public interface IQuestionService {
 
     QuestionDto getQuestionById(long questionId);
 
-    List<QuestionDto> getQuestionsForType(String type);
+    List<QuestionDto> getQuestionsForQuiz(Long id);
 
     CreationResultDto addNewQuestion(QuestionDto dto);
 }

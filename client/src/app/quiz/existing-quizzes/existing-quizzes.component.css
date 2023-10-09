@@ -1,0 +1,55 @@
+.existing-quizzes {
+  margin-top: 20px;
+}
+
+.existing-quizzes table {
+  margin-top: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.existing-quizzes table {
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid rgba(0, 79, 255, 0.21);
+  background-color: rgba(0, 79, 255, 0.21);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #00000078;
+}
+
+.existing-quizzes td {
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+.existing-quizzes table, thead, tbody, td {
+  border: 1px solid;
+}
+
+.existing-quizzes td.id {
+  text-align: center;
+}
+
+.get-quizzes-btn {
+  background-color: #ff000000;
+  border-radius: 7px;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.get-quizzes-btn:hover {
+  opacity: 1;
+}
+
+.btn {
+  width: 100%;
+  background-color: #ff000000;
+  border-radius: 7px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-cell {
+  border: 0;
+}

@@ -13,8 +13,12 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class QuestionDto {
+
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Long quizId;
+
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Long id;
 
     private String text;
     private List<AnswerDto> answers;

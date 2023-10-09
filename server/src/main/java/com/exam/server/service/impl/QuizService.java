@@ -22,9 +22,8 @@ public class QuizService implements IQuizService {
 
     @Override
     public List<QuizTypeDto> getAvailableQuizTypes() {
-        var availableTypes = quizRepository.getAvailableTypes();
-        return IntStream.range(0, availableTypes.size())
-                .mapToObj(i -> QuizTypeDto.builder().id(i).name(availableTypes.get(i)).build())
+        return quizRepository.findAll().stream()
+                .map(type -> QuizTypeDto.builder().id(type.getId()).name(type.getType()).build())
                 .toList();
     }
 

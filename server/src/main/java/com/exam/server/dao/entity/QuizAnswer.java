@@ -22,7 +22,7 @@ public class QuizAnswer {
     private String text;
     private boolean correct;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "question_id")
     private QuizQuestion question;
 }

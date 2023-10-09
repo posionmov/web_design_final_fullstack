@@ -34,9 +34,9 @@ public class QuizController {
         return questionService.getQuestionById(questionId);
     }
 
-    @GetMapping("question/list/{quizType}")
-    public List<QuestionDto> getQuestionById(@PathVariable("quizType") String quizType) {
-        return questionService.getQuestionsForType(quizType);
+    @GetMapping("question/list/{quizId}")
+    public List<QuestionDto> getQuestionsForQuiz(@PathVariable("quizId") Long quizId) {
+        return questionService.getQuestionsForQuiz(quizId);
     }
 
     @PutMapping("question")

@@ -29,9 +29,9 @@ public class QuestionService implements IQuestionService {
     }
 
     @Override
-    public List<QuestionDto> getQuestionsForType(String type) {
-        var questions = questionRepository.getAllQuestionsByQuizType(type);
-        return questions.stream().map(QuestionService::toQuestionDto).toList();
+    public List<QuestionDto> getQuestionsForQuiz(Long id) {
+        var quiz = quizRepository.findById(id).orElseThrow();
+        return quiz.getQuestions().stream().map(QuestionService::toQuestionDto).toList();
     }
 
     @Override
@@ -44,7 +44,6 @@ public class QuestionService implements IQuestionService {
         var answers = createNewAnswers(dto.getAnswers(), newQuestion);
         newQuestion.setAnswers(answers);
         questionRepository.save(newQuestion);
-        answerRepository.saveAll(answers);
         return new CreationResultDto(newQuestion.getId());
     }
 
@@ -60,12 +59,12 @@ public class QuestionService implements IQuestionService {
 
     private static QuestionDto toQuestionDto(QuizQuestion question) {
         return QuestionDto.builder()
+                .id(question.getId())
                 .text(question.getText())
                 .answers(question.getAnswers()
                         .stream()
-                        .map(answer -> AnswerDto.builder().text(answer.getText()).build())
-                        .toList()
-                )
+                        .map(answer -> AnswerDto.builder().text(answer.getText()).correct(answer.isCorrect()).build())
+                        .toList())
                 .build();
     }
 }

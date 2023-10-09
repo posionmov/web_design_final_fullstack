@@ -3,7 +3,7 @@
 -- changeset s.galanov:create_quiz_table
 create table quiz (
     id SERIAL PRIMARY KEY,
-    type varchar(100) not null
+    type varchar(100) not null UNIQUE
 )
 go
 

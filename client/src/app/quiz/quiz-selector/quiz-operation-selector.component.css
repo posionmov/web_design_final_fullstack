@@ -1,0 +1,26 @@
+.operation-nav nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.operation-nav nav ul {
+  cursor: pointer;
+  text-align: center;
+  margin: 5px;
+  border-bottom: 1px solid black;
+
+  padding: 10px;
+}
+
+.operation-nav nav ul:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.operation-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
