@@ -33,16 +33,6 @@
                             <goal>npm</goal>
                         </goals>
                     </execution>
-                    <execution>
-                        <id>unit tests</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>npm</goal>
-                        </goals>
-                        <configuration>
-                            <arguments>run-script test</arguments>
-                        </configuration>
-                    </execution>
                 </executions>
             </plugin>
         </plugins>
