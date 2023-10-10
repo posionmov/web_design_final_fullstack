@@ -6,7 +6,6 @@ import com.exam.server.controller.model.question.QuestionDto;
 import com.exam.server.dao.entity.QuizAnswer;
 import com.exam.server.dao.entity.QuizQuestion;
 import com.exam.server.dao.repo.QuestionRepository;
-import com.exam.server.dao.repo.QuizAnswerRepository;
 import com.exam.server.dao.repo.QuizRepository;
 import com.exam.server.service.api.IQuestionService;
 import lombok.RequiredArgsConstructor;
@@ -20,7 +19,6 @@ public class QuestionService implements IQuestionService {
 
     private final QuestionRepository questionRepository;
     private final QuizRepository quizRepository;
-    private final QuizAnswerRepository answerRepository;
 
     @Override
     public QuestionDto getQuestionById(long questionId) {
