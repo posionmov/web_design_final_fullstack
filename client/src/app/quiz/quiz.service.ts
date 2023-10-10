@@ -1,11 +1,12 @@
 import {Injectable} from "@angular/core";
 import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {Observable, Observer} from "rxjs";
+import {environment} from "../../environment/environment";
 
 @Injectable()
 export class QuizService {
 
-  private url = 'http://localhost:8080'
+  private url = environment.baseUrl
 
   constructor(private httpClient: HttpClient) {}
 
