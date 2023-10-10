@@ -15,10 +15,10 @@ import {Observer} from "rxjs";
         <input id="type" type="text" formControlName="type" placeholder="New quiz name">
         <div *ngIf="model.type.invalid && (model.type.dirty || model.type.touched)" class="validation-error">
           <div *ngIf="model.type.errors?.['required']" class="error">
-            field is required
+            Field is required
           </div>
           <div *ngIf="model.type.errors?.['minlength']" class="error">
-            field must be at least 4 characters long
+            Field must be at least 4 characters long
           </div>
         </div>
         <button type="submit" [disabled]="!model.valid" class="submit-btn">Submit</button>

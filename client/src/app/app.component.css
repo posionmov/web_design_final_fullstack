@@ -5,25 +5,24 @@
 }
 
 .nav-bar {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: rgba(0, 79, 255, 0.21);
-  top: 0;
-  left: 0;
   width: 300px;
-  box-shadow: 0 0 5px 10px rgba(0, 79, 255, 0.21);
+  box-shadow: 3px 5px 5px 10px rgba(0, 79, 255, 0.21);
+  min-height: 100vh;
+  border-radius: 15px;
 }
 
 .root-body {
   background-color: rgba(176, 139, 87, 0.36);
+  box-shadow: -4px 1px 5px 5px rgba(176, 139, 87, 0.36);
   position: relative;
   margin-left: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
   width: 100%;
   overflow: auto;
-  max-height: 100vh;
-  padding: 10px;
   border-radius: 15px;
 }
 

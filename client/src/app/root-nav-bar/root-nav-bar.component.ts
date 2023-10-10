@@ -20,9 +20,9 @@ import {NavLink} from "./root-nav-bar.service";
 export class NavToolbarComponent implements OnDestroy {
 
   links: NavLink[] = [
-    {title: "Quizzes", routeLink: "/quiz", selected: false},
-    {title: "New Quiz", routeLink: "/quiz/new", selected: false},
-    {title: "Add Quiz question", routeLink: "/question/add", selected: false}
+    {title: "Main menu", routeLink: "/quiz", selected: false},
+    {title: "Quizzes list", routeLink: "/quiz/list", selected: false},
+    {title: "New Quiz", routeLink: "/quiz/create", selected: false},
   ]
 
   private subscriptions: Subscription = new Subscription();

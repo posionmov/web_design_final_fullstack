@@ -9,11 +9,6 @@ form button, input {
   padding: 5px;
 }
 
-.validation-error {
-  color: red;
-  font-size: 15px;
-}
-
 .disabled {
   pointer-events: none;
   opacity: 0.5;

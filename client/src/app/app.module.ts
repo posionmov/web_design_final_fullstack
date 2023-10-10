@@ -15,6 +15,8 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {CreateQuizFormModel} from "./quiz/create-quiz/create-quiz-form.model";
 import {QuestionListComponent} from "./question-list/question-list.component";
 import {QuestionAddComponent} from "./question-add/question-add.component";
+import {QuestionAddFormModel} from "./question-add/question-add-form.model";
+import {FooterMainComponent} from "./footer/footer.component";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import {QuestionAddComponent} from "./question-add/question-add.component";
     QuizOperationSelectorComponent,
     CreateQuizComponent,
     QuestionListComponent,
-    QuestionAddComponent
+    QuestionAddComponent,
+    FooterMainComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import {QuestionAddComponent} from "./question-add/question-add.component";
   providers: [
     QuizService,
     CreateQuizFormModel,
+    QuestionAddFormModel,
   ],
   bootstrap: [AppComponent]
 })

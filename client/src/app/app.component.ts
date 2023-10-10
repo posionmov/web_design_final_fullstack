@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
         <router-outlet></router-outlet>
       </div>
     </div>
+    <footer-main></footer-main>
   `,
   styleUrls: ['./app.component.css']
 })

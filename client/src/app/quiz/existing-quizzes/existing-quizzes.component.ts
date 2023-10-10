@@ -10,8 +10,8 @@ import {Router} from "@angular/router";
         <button class="get-quizzes-btn" (click)="getExistingQuizzes()">reload</button>
         <table>
           <thead>
-          <th>id</th>
-          <th>Name</th>
+            <th>Id</th>
+            <th>Name</th>
           </thead>
           <tbody *ngFor="let quiz of existedQuizzes">
           <tr>
