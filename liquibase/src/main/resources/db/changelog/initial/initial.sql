@@ -19,7 +19,7 @@ go
 -- changeset s.galanov:create_answer_table
 create table answer (
     id SERIAL PRIMARY KEY,
-    text varchar(300),
+    text varchar(300) not null,
     correct BOOLEAN not null,
     question_id int not null,
     constraint fk__answer__question foreign key (question_id) references question (id)
