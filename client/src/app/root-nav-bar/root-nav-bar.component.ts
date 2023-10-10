@@ -21,7 +21,7 @@ export class NavToolbarComponent implements OnDestroy {
 
   links: NavLink[] = [
     {title: "Main menu", routeLink: "/quiz", selected: true},
-    {title: "Quizzes list", routeLink: "/quiz/list", selected: false},
+    {title: "List of quizzes", routeLink: "/quiz/list", selected: false},
     {title: "New Quiz", routeLink: "/quiz/create", selected: false},
   ]
 

@@ -105,8 +105,7 @@ export class QuestionAddComponent implements OnDestroy {
         this.error = true;
         this.errorMsg = error.message
       },
-      () => {
-      }
+      () => this.model.formGroup.reset()
     );
 
     this.subscriptions.add(

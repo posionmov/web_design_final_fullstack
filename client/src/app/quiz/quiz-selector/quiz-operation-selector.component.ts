@@ -4,10 +4,10 @@ import {Component} from "@angular/core";
   selector: 'quiz-operation-selector',
   template: `
     <div class="operation-nav">
-      <h2>Select operation to perform</h2>
+      <h2>Select the operation to perform</h2>
       <nav>
-        <ul routerLink="list">Get quiz types</ul>
-        <ul routerLink="create">Create quiz type</ul>
+        <ul routerLink="list">Quizzes</ul>
+        <ul routerLink="create">Create quiz</ul>
       </nav>
     </div>
   `,
